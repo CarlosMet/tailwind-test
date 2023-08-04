@@ -9,7 +9,7 @@ export default function Hero() {
         <h1 className='text-3xl lg:text-5xl 2xl:text-7xl font-bold xl:font-extrabold tracking-tighter lg:tracking-tight z-40 text-center lg:text-left'>Carlos Metaute, <br />  <div className='text-[#00E5BC]'><span className='text-white'>i'm</span> Frontend Developer.</div></h1>
         <p className='w-full lg:w-[535px] 2xl:w-[800px] mt-4 md:mt-6 lg:mt-8 leading-relaxed 2xl:mt-12 text-gray-400 tracking-tight z-40 text-lg text-justify'>Lorem ipsum dolor sit amet consectetur two teas to room tu tu. Quod eos i dont know what else! Lorem ipsum dolor sit amet consectetu.</p>
         <div className='text-center lg:text-left'>
-          <button className='z-40 mt-4 md:mt-6 lg:mt-8 2xl:mt-14 border-2 border-[#00E5BC] py-2 px-10 lg:px-9 xl:px-28 2xl:px-32 hover:border-black hover:bg-black transition-colors duration-500'>Something</button>
+          <button className='z-40 mt-4 md:mt-6 lg:mt-8 2xl:mt-14 border-2 border-[#00E5BC] text-[#00E5BC] py-2 px-10 lg:px-9 xl:px-28 2xl:px-32 hover:border-black hover:bg-black transition-colors duration-500'>Something</button>
         </div>
         
         <img className='absolute top-14 w-6/12 right-1/2 translate-x-1/2 lg:translate-x-0 lg:top-auto lg:bottom-0 lg:right-20 xl:right-40 2xl:right-64 lg:w-[29%] z-20' src="https://i.imgur.com/OTdKfwe.png" alt="" />
