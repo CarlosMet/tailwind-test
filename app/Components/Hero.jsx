@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <div className='overflow-hidden w-[100vw] h-[100vh] relative pad py-[306px] lg:py-48 2xl:py-80'>
+    <div className='overflow-hidden w-[100vw] h-[100vh] relative py-[306px] lg:py-48 2xl:py-80 px-3 md:px-12 lg:px-16 xl:px-36 2xl:px-64'>
 
         <h1 className='text-3xl lg:text-5xl 2xl:text-7xl font-bold xl:font-extrabold tracking-tighter lg:tracking-tight z-40 text-center lg:text-left'>Carlos Metaute, <br />  <div className='text-[#00E5BC]'><span className='text-white'>i'm</span> Frontend Developer.</div></h1>
         <p className='w-full lg:w-[535px] 2xl:w-[800px] mt-4 md:mt-6 lg:mt-8 leading-relaxed 2xl:mt-12 text-gray-400 tracking-tight z-40 text-lg text-justify'>Lorem ipsum dolor sit amet consectetur two teas to room tu tu. Quod eos i dont know what else! Lorem ipsum dolor sit amet consectetu.</p>
