@@ -6,3 +6,18 @@
   background-color: #0c1318;
   color: white;
 }
+
+.avatar{
+  animation: avatarFadeOut 1s forwards;
+}
+
+@keyframes avatarFadeOut{
+  from{
+    opacity: 1;
+    bottom: 0px;
+  }
+  to{
+    opacity: 0;
+    bottom: -50px;
+  }
+}
