@@ -1,5 +1,5 @@
 "use client"
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
@@ -19,7 +19,9 @@ export default function Hero() {
         avatarRef.current.classList.add('avatar')
     }
 
-    const pageChange = useSelector( state => state.valor.bool )
+    
+
+    const pageChange = useSelector( state => state.valor.bool )    
     const dispatch = useDispatch()
 
     const pageChangeHandler = ()=>{
@@ -29,6 +31,18 @@ export default function Hero() {
         }, 500)
         dispatch(guardarNombre(!pageChange))
     }
+
+    const [animationHandler, setAnimationHandler] = useState(pageChange)
+
+    useEffect(()=>{
+      if (pageChange){
+        startAnimation()
+        setTimeout(()=>{          
+          dispatch(guardarNombre(!pageChange))
+          
+        }, 100)
+      }
+    }, [pageChange])
 
     
 
@@ -43,7 +57,7 @@ export default function Hero() {
         <div className='text-center lg:text-left'>
           
           <button 
-            onClick={pageChangeHandler}
+            onClick={()=> setAnimationHandler(!animationHandler)}
             className='z-40 mt-4 md:mt-6 lg:mt-8 2xl:mt-14 border-2 border-[#00E5BC] text-[#00E5BC] py-2 px-10 lg:px-9 xl:px-28 2xl:px-32 hover:border-black hover:bg-black transition-colors duration-500'>{pageChange? 'siu': 'nope'}</button>
           
         </div>
