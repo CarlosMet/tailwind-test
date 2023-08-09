@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux'
 import { guardarNombre } from '@/store/slice'
+import SectionNumber from './SectionNumber'
 
 
 
@@ -14,6 +15,7 @@ export default function Hero() {
     const router = useRouter()
 
     const avatarRef = useRef(null)
+    
     
     function startAnimation(){
         avatarRef.current.classList.add('avatar')
@@ -49,8 +51,8 @@ export default function Hero() {
     
 
   return (
-    <div className='overflow-hidden w-[100vw] h-[100vh] relative py-[306px] lg:py-48 2xl:py-80 px-3 md:px-12 lg:px-16 xl:px-36 2xl:px-64'>
-
+    <div className='overflow-hidden w-[100vw] h-[100vh] relative py-[290px] lg:py-44 2xl:py-72 px-3 md:px-12 lg:px-16 xl:px-36 2xl:px-64'>
+        <SectionNumber number={'1'}></SectionNumber>
         <motion.h1             
             className='text-3xl lg:text-5xl 2xl:text-7xl font-bold xl:font-extrabold tracking-tighter lg:tracking-tight z-40 text-center lg:text-left'>Carlos Metaute, <br />  <div className='text-[#00E5BC]'><span className='text-white'>i'm</span> Frontend Developer.</div></motion.h1>
         <p className='w-full lg:w-[535px] 2xl:w-[800px] mt-4 md:mt-6 lg:mt-8 leading-relaxed 2xl:mt-12 text-gray-400 tracking-tight z-40 text-lg text-justify'>Lorem ipsum dolor sit amet consectetur two teas to room tu tu. Quod eos i dont know what else! Lorem ipsum dolor sit amet consectetu.</p>

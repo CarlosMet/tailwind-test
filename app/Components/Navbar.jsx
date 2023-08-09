@@ -15,15 +15,23 @@ export default function Navbar() {
   const dispatch = useDispatch()
   const router = useRouter()
 
-  const pageChangeHandler = (route)=>{    
-    dispatch(guardarNombre(!triggerPageChange))
-    setTimeout(()=>{
-      dispatch(guardarNombre(!triggerPageChange))
-      setTimeout(() => {
-        router.push(`/${route}`)
-      },350);
-      
-    },10)
+  const pageChangeHandler = (route)=>{   
+    dispatch(guardarNombre(false))
+    if(route === '/'){
+      dispatch(guardarNombre(false))
+      router.push(`/${route}`)
+    }else{
+      setTimeout(()=>{
+        dispatch(guardarNombre(!triggerPageChange))
+        setTimeout(() => {
+          router.push(`/${route}`)
+        },350);
+        
+      },10)
+    }
+    
+    
+   
   }
 
   return (
@@ -43,7 +51,12 @@ export default function Navbar() {
         >
             <RiContactsLine size={27}></RiContactsLine>
         </div>
-        <BiHomeAlt2 size={27}></BiHomeAlt2>
+        <div 
+          className='cursor-pointer'
+          onClick={()=> pageChangeHandler('/')}
+          >
+          <BiHomeAlt2 size={27}></BiHomeAlt2>
+        </div>
         <BsFillSendExclamationFill size={27}></BsFillSendExclamationFill>
         <GiStrong size={27}></GiStrong>
     </nav>
