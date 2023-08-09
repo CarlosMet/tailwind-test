@@ -61,7 +61,7 @@ export default function page() {
     
     
   return (
-    <div className='w-screen h-screen overflow-hidden px-3 md:px-12 lg:px-16 xl:px-36 2xl:px-64 py-20 lg:py-36 xl:py-44'>
+    <div className='w-screen h-screen overflow-hidden px-3 md:px-12 lg:px-16 xl:px-36 2xl:px-64 py-20 lg:py-36 xl:py-44 relative'>
 
       <div className='flex flex-col lg:flex-row items-center w-full'>
 
@@ -77,6 +77,8 @@ export default function page() {
             <Slider slides={projects}></Slider>
         </div>
       </div>
+
+      
 
     </div>
   )

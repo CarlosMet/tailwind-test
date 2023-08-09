@@ -4,13 +4,22 @@ import React, { useState } from 'react'
 export default function Slider({slides}) {
     const [currentSlide, setCurrentSlide] = useState(0)
     const goRight = ()=>{
-        setCurrentSlide(currentSlide + 1)
+        if (currentSlide === slides.length - 1){            
+            setCurrentSlide(0)
+        }else{
+            setCurrentSlide(currentSlide + 1)
+        }
     }
     const goLeft = ()=>{
-        setCurrentSlide(currentSlide - 1)
+        if(currentSlide === 0){
+            setCurrentSlide(slides.length - 1)
+        }else{
+            setCurrentSlide(currentSlide - 1)
+        }
     }
 
     const dotHandler = (position)=>{
+        
         setCurrentSlide(position)
     }
   return (
