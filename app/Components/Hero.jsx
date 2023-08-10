@@ -56,8 +56,8 @@ export default function Hero() {
           <SectionNumber number={'1'}></SectionNumber>
         </div>
         <motion.h1             
-            className='text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold xl:font-extrabold tracking-tighter lg:tracking-tight z-40 text-center lg:text-left'>I'm Carlos Metaute, <br />  <div className='text-[#00E5BC] '>Frontend Developer.</div></motion.h1>
-        <p className='w-full lg:w-[535px] 2xl:w-[800px] mt-4 md:mt-6 lg:mt-8 leading-relaxed 2xl:mt-12 text-gray-400 tracking-tight z-40 text-lg text-center lg:text-justify'>Lorem ipsum dolor sit amet consectetur two teas to room tu tu. Quod eos i dont know what else! Lorem ipsum dolor sit amet consectetu.</p>
+            className='text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold xl:font-extrabold tracking-tighter lg:tracking-tight z-40 text-center md:text-left'>I'm Carlos Metaute, <br />  <div className='text-[#00E5BC] '>Frontend Developer.</div></motion.h1>
+        <p className='w-full lg:w-[535px] 2xl:w-[800px] mt-4 md:mt-6 lg:mt-8 leading-relaxed 2xl:mt-12 text-gray-400 tracking-tight z-40 text-lg text-center md:text-justify'>Lorem ipsum dolor sit amet consectetur two teas to room tu tu. Quod eos i dont know what else! Lorem ipsum dolor sit amet consectetu.</p>
         <div className='text-center lg:text-left'>
           
           <button 
