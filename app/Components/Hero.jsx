@@ -51,7 +51,7 @@ export default function Hero() {
     
 
   return (
-    <div className='overflow-hidden w-[100vw] h-[100vh] relative py-36 lg:py-44 2xl:py-72 px-3 md:px-12 lg:px-16 xl:px-36 2xl:px-64'>
+    <div className='overflow-hidden w-[100vw] h-[100vh] relative py-36 md:py-24 lg:py-44 2xl:py-72 px-3 md:px-12 lg:px-16 xl:px-36 2xl:px-64'>
         <div className='text-center'>
           <SectionNumber number={'1'}></SectionNumber>
         </div>
