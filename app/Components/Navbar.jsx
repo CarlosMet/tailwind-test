@@ -35,7 +35,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='fixed -bottom-9 w-full left-1/2 lg:left-auto -translate-x-1/2 lg:-translate-x-0 lg:w-10 lg:top-1/2 lg:right-5 xl:right-7 transform -translate-y-1/2 flex flex-row justify-between lg:flex-col items-center gap-3 text-white bg-white/40 lg:bg-gray-600/40 px-2 2xl:px-3 py-5 rounded-none lg:rounded-2xl z-50'>
+    <nav className='fixed -bottom-9 w-full left-1/2 md:left-auto -translate-x-1/2 md:-translate-x-0 md:w-10 md:top-1/2 md:right-5 xl:right-7 transform -translate-y-1/2 flex flex-row justify-between md:flex-col items-center gap-3 text-white bg-white/40 md:bg-gray-600/40 px-2 2xl:px-3 py-5 rounded-none md:rounded-2xl z-50'>
         
         <div
           className='cursor-pointer'
