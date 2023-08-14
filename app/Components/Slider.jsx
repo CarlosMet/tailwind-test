@@ -29,8 +29,23 @@ export default function Slider({slides}) {
         
         setCurrentSlide(position)
     }
+
+    const handleSwip = (e)=>{
+        // onTouchMove returns the event e that has some properties like touches, touches.length lets u know how many "fingers" touched the screen, if 1 finger touched the screen we can change the slide
+
+        if ( e.touches.length === 1 ){
+            const touch = e.touches[0]
+            // touch.clientX refers to the current position of the touch or the finger into the screen, and startX refers to where the touch event began
+            const xPosition = touch.clientX - touch.startX
+            if(xPosition > 50 || xPosition < -50){
+                changePage()
+            }
+        }
+
+    }
+
   return (
-    <div className='relative w-full px-0 lg:px-3'>
+    <div onTouchMove={handleSwip} className='relative w-full px-0 lg:px-3'>
       <div className='grid grid-cols-2 place-items-center gap-x-1 md:gap-x-0 gap-y-4 md:gap-y-2 xl:gap-y-5'>
       {slides.slice(slicers.initial,slicers.last).map( (slide, index) =>{
         return(

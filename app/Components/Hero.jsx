@@ -68,7 +68,7 @@ export default function Hero() {
         
         <img ref={avatarRef} className='absolute hidden lg:block top-14 w-6/12 right-1/2 translate-x-1/2 lg:translate-x-0 lg:top-auto lg:bottom-0 lg:right-20 xl:right-40 2xl:right-64 lg:w-[29%] z-20' src="https://i.imgur.com/OTdKfwe.png" alt="" />
         <img src="https://i.imgur.com/mKNPStx.png" className='hidden lg:block lg:w-[145%] lg:h-[115%] absolute bottom-0 lg:-bottom-9 -z-10 left-0 mix-blend-color-dodge' alt="" />
-        <img src="https://i.imgur.com/mKNPStx.png" className='block lg:hidden lg:w-[145%] lg:h-[115%] absolute bottom-0 lg:-bottom-9 -z-10 left-0 mix-blend-color-dodge' alt="" />
+        <img src="https://i.imgur.com/Mw1p9T4.png" className='block lg:hidden lg:w-[145%] lg:h-[115%] absolute bottom-0 lg:-bottom-9 -z-10 left-0 mix-blend-color-dodge' alt="" />
       {/* {https://i.imgur.com/3i0z58v.jpg} */}
 
     </div>
