@@ -10,7 +10,8 @@ module.exports = {
       sm: '300px',
       md: '615px',
       lg: '976px',
-      xl: '1240px'      
+      xl: '1240px',
+      '2xl': '1458px'      
     },
     extend: {
       backgroundImage: {
