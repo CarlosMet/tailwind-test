@@ -24,7 +24,15 @@ export default function Slider({slides}) {
     }
   return (
     <div className='relative w-full'>
-      <img className='w-7/12 lg:w-10/12 h-64 lg:h-96 2xl:h-[512px] mx-auto' src={slides[currentSlide].image} alt="" />
+      <div className='grid grid-cols-2 place-items-center gap-x-1 md:gap-x-0 gap-y-4 md:gap-y-2'>
+      {slides.slice(0,4).map( (slide, index) =>{
+        return(
+            <div className='overflow-hidden rounded-xl md:rounded-md w-[95%] h-24 lg:h-40 bg-purple-400'>
+                <img src={slide.image} key={index} alt="" className='w-full bg-inherit' />
+            </div>
+        )
+      } )}
+      </div>
       <button onClick={goRight} className='absolute top-1/2 right-0 transform -translate-y-1/2'>right</button>
       <button onClick={goLeft} className='absolute top-1/2 left-0 transform -translate-y-1/2'>left</button>
       <div className="absolute -bottom-8 flex items-center gap-2 left-1/2 -translate-x-1/2">{slides.map( (dot, index) =>{
