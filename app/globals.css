@@ -3,12 +3,17 @@
 @tailwind utilities;
 
  body{
+  width: 100vw;
   background-color: #0c1318;
   color: white;
 }
 
+html{
+  width: 100vw !important;
+}
+
 .avatar{
-  animation: avatarFadeOut 1s forwards;
+  animation: avatarFadeOut 1s forwards;  
 }
 
 @keyframes avatarFadeOut{
@@ -20,4 +25,16 @@
     opacity: 0;
     bottom: -50px;
   }
+}
+
+.project-card:hover{
+  scale: 1.08 !important;
+  transition: 0.4s linear all;
+}
+.project-link{
+  opacity: 0;
+}
+.project-card:hover .project-link{
+  transition: 0.4s linear opacity;
+  opacity: 1;  
 }

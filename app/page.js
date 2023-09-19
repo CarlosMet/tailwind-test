@@ -5,8 +5,8 @@ import Topbar from "./Components/Topbar";
 
 export default function Home() {
   return (
-    <div className='relative w-screen h-screen overflow-hidden'>      
+    <main className='relative w-screen min-h-screen overflow-hidden'>      
       <Hero></Hero>
-    </div>
+    </main>
   )
 }
